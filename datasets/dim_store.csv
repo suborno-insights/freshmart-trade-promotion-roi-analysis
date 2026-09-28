@@ -1,0 +1,21 @@
+store_id,store_name,city,division_id,division_name
+1,Gulshan Branch,Dhaka,1,Dhaka
+2,Uttara Branch,Dhaka,1,Dhaka
+3,Dhanmondi Branch,Dhaka,1,Dhaka
+4,Mirpur Branch,Dhaka,1,Dhaka
+5,Gazipur Branch,Gazipur,1,Dhaka
+6,Narayanganj Branch,Narayanganj,1,Dhaka
+7,Agrabad Branch,Chattogram,2,Chattogram
+8,GEC Circle Branch,Chattogram,2,Chattogram
+9,Cox's Bazar Branch,Cox's Bazar,2,Chattogram
+10,Comilla Branch,Comilla,2,Chattogram
+11,Rajshahi City Branch,Rajshahi,3,Rajshahi
+12,Bogura Branch,Bogura,3,Rajshahi
+13,Khulna City Branch,Khulna,4,Khulna
+14,Jessore Branch,Jessore,4,Khulna
+15,Sylhet City Branch,Sylhet,5,Sylhet
+16,Moulvibazar Branch,Moulvibazar,5,Sylhet
+17,Rangpur City Branch,Rangpur,6,Rangpur
+18,Dinajpur Branch,Dinajpur,6,Rangpur
+19,Barishal City Branch,Barishal,7,Barishal
+20,Mymensingh City Branch,Mymensingh,8,Mymensingh

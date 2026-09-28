@@ -1,0 +1,37 @@
+product_id,product_name,category,brand,regular_unit_price,unit_cost
+1,Sonar Bangla Rice,Rice,Sonar Bangla,78.00,70.20
+2,Doyel Chal Rice,Rice,Doyel Chal,82.00,74.62
+3,Padma Rice,Rice,Padma Rice,75.00,66.75
+4,Bashundhara Premium Rice,Rice,Bashundhara Premium,90.00,82.80
+5,Golden Harvest Rice,Rice,Golden Harvest,85.00,74.80
+6,Purnota Soybean Oil,Cooking Oil,Purnota,175.00,157.50
+7,Fresh Gold Soybean Oil,Cooking Oil,Fresh Gold,185.00,168.35
+8,Nabanno Soybean Oil,Cooking Oil,Nabanno,170.00,149.60
+9,Sathi Soybean Oil,Cooking Oil,Sathi Oil,180.00,165.60
+10,Chompa Bathing Soap,Soap & Detergent,Chompa,40.00,31.20
+11,Ujjol Washing Powder,Soap & Detergent,Ujjol,120.00,96.00
+12,Safa Bathing Soap,Soap & Detergent,Safa,45.00,33.75
+13,Dristi Clean Washing Powder,Soap & Detergent,Dristi Clean,140.00,110.60
+14,Moti Bathing Soap,Soap & Detergent,Moti,35.00,26.95
+15,Mojar Crunch Chanachur,Snacks,Mojar Crunch,15.00,10.20
+16,Bindaas Chips,Snacks,Bindaas,20.00,14.00
+17,Tasty Bites Biscuits,Snacks,Tasty Bites,25.00,16.25
+18,ChotPoti Chips,Snacks,ChotPoti Chips,12.00,8.04
+19,Ranga Cola,Beverages,Ranga Cola,30.00,21.60
+20,Fresh Sip Juice,Beverages,Fresh Sip,25.00,18.50
+21,Aam Pana Mango Drink,Beverages,Aam Pana,20.00,14.00
+22,Thanda Drop Soft Drink,Beverages,Thanda Drop,35.00,25.55
+23,Sorbot Lemon Drink,Beverages,Sorbot,45.00,33.75
+24,Doodh Ghor Milk,Dairy,Doodh Ghor,90.00,79.20
+25,Pure Dairy Milk,Dairy,Pure Dairy,95.00,85.50
+26,Gabtoli Milk,Dairy,Gabtoli Milk,85.00,73.10
+27,Fresh Dana Milk,Dairy,Fresh Dana,100.00,85.00
+28,Cha Bagan Tea,Tea & Coffee,Cha Bagan,90.00,70.20
+29,Morning Cup Coffee,Tea & Coffee,Morning Cup,180.00,144.00
+30,Assam Blend Tea,Tea & Coffee,Assam Blend,100.00,76.00
+31,Kap Kofi Coffee,Tea & Coffee,Kap Kofi,200.00,150.00
+32,Moshla Ghor Mixed Spice,Spices,Moshla Ghor,50.00,39.00
+33,Rannaghor Turmeric Powder,Spices,Rannaghor,60.00,48.00
+34,Ador Spice Chili Powder,Spices,Ador Spice,45.00,34.20
+35,Teekha Chili Powder,Spices,Teekha,40.00,30.00
+36,Ranna Bondhu Garam Masala,Spices,Ranna Bondhu,90.00,71.10
