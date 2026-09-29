@@ -48,7 +48,7 @@ This project uses a **synthetic dataset**. `Dim_Calendar`, `Fact_Promotion`, and
 |---|---|
 | 1. Business Question | ✅ Done |
 | 2. Data Design | ✅ Done |
-| 3. SQL — Data Prep & Audit | ⏳ In progress |
+| 3. SQL — Data Prep & Audit | ✅ Done |
 | 4. Core Calculations (ROI Logic) | ⏳ Pending |
 | 5. Power BI Dashboard | ⏳ Pending |
 | 6. Insight & Documentation | ⏳ Pending |
@@ -73,7 +73,10 @@ Every major decision in this project — including alternatives considered and w
 │   ├── generate_dim_calendar.py
 │   ├── generate_fact_promotion.py
 │   └── generate_fact_sales.py
-├── sql/              (coming in Step 3)
+├── sql/
+│   ├── 01_schema_constraints.sql
+│   ├── 02_audit_queries.sql
+│   └── 03_business_logic_verification.sql
 ├── powerbi/           (coming in Step 5)
 ├── DECISION_LOG.md
 └── README.md
@@ -81,4 +84,4 @@ Every major decision in this project — including alternatives considered and w
 
 ## Author
 
-Suborno — Data Analyst / BI Analyst (entry-level), Dhaka, Bangladesh
+Suborna — Data Analyst / BI Analyst (entry-level), Dhaka, Bangladesh
