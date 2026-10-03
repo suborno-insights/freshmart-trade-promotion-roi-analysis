@@ -19,6 +19,22 @@ end_range = date(2026, 9, 30)
 
 type_weights = [0.40, 0.25, 0.20, 0.15]  # Percentage, Flat, BOGO, Bundle
 
+# Category-specific discount depth, following real-world retail/CPG practice:
+# thinner-margin categories (Decision 2.7) get shallower discounts, since
+# deep discounts on already-thin margins are not commercially viable.
+# (low%, high%) used directly for Percentage Discount, and as the basis
+# for Flat Discount (converted to currency) and Bundle Offer discounts.
+CATEGORY_DISCOUNT_RANGE = {
+    "Rice": (3, 7),
+    "Cooking Oil": (3, 7),
+    "Dairy": (4, 8),
+    "Soap & Detergent": (8, 15),
+    "Tea & Coffee": (8, 15),
+    "Spices": (8, 15),
+    "Beverages": (10, 18),
+    "Snacks": (12, 20),
+}
+
 # Same season centers used to build Dim_Calendar's event windows
 season_centers = [
     date(2023, 10, 24), date(2024, 4, 10), date(2024, 6, 17), date(2024, 10, 12),
@@ -40,6 +56,8 @@ def generate(products):
     for p in products:
         pid = int(p["product_id"])
         reg_price = float(p["regular_unit_price"])
+        category = p["category"]
+        low_pct, high_pct = CATEGORY_DISCOUNT_RANGE[category]
         n_events = random.randint(11, 15)  # ~13 avg per product -> ~468-475 total
         used_ranges = []
         attempts, events_made = 0, 0
@@ -61,14 +79,14 @@ def generate(products):
             ptype = random.choices([1, 2, 3, 4], weights=type_weights)[0]
             discount_pct = flat_amt = free_units = bundle_qty = bundle_price = ""
             if ptype == 1:
-                discount_pct = round(random.uniform(10, 30), 1)
+                discount_pct = round(random.uniform(low_pct, high_pct), 1)
             elif ptype == 2:
-                flat_amt = round(reg_price * random.uniform(0.08, 0.18), 2)
+                flat_amt = round(reg_price * random.uniform(low_pct, high_pct) / 100.0, 2)
             elif ptype == 3:
                 free_units = 1
             elif ptype == 4:
                 bundle_qty = random.choice([2, 3])
-                bundle_price = round(reg_price * bundle_qty * (1 - random.uniform(0.10, 0.20)), 2)
+                bundle_price = round(reg_price * bundle_qty * (1 - random.uniform(low_pct, high_pct) / 100.0), 2)
 
             rows.append([promo_id, pid, ptype, s.isoformat(), e.isoformat(),
                          discount_pct, flat_amt, free_units, bundle_qty, bundle_price])
