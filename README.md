@@ -49,7 +49,7 @@ This project uses a **synthetic dataset**. `Dim_Calendar`, `Fact_Promotion`, and
 | 1. Business Question | ✅ Done |
 | 2. Data Design | ✅ Done |
 | 3. SQL — Data Prep & Audit | ✅ Done |
-| 4. Core Calculations (ROI Logic) | ⏳ Pending |
+| 4. Core Calculations (ROI Logic) | ✅ Done |
 | 5. Power BI Dashboard | ⏳ Pending |
 | 6. Insight & Documentation | ⏳ Pending |
 | 7. Portfolio Publish | ⏳ Pending |
@@ -76,7 +76,8 @@ Every major decision in this project — including alternatives considered and w
 ├── sql/
 │   ├── 01_schema_constraints.sql
 │   ├── 02_audit_queries.sql
-│   └── 03_business_logic_verification.sql
+│   ├── 03_business_logic_verification.sql
+│   └── 04_roi_views.sql
 ├── powerbi/           (coming in Step 5)
 ├── DECISION_LOG.md
 └── README.md
