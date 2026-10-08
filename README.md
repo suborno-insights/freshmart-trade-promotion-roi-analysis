@@ -32,7 +32,7 @@ A star schema with 7 tables:
 
 **Hierarchy:** `Fact_Sales → Dim_Store → Dim_Division` (city lives on Dim_Store, not Dim_Division — a division has many cities, a store has exactly one)
 
-![ER Diagram](./ER_diagram.png)
+![ER Diagram](ER_diagram.PNG)
 
 *Note: `Fact_Sales.transaction_datetime` is not linked to `Dim_Calendar` by a formal foreign key — a date-time value can't directly reference a date-only key. The relationship is enforced through audit checks instead (`CAST(transaction_datetime AS DATE)`), see `DECISION_LOG.md`, Decision 3.3.*
 
